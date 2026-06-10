@@ -16,7 +16,7 @@ Shader "yky/SimpleBlobShadow"
 
         Pass
         {
-            Blend DstColor Zero
+            Blend SrcAlpha OneMinusSrcAlpha
             ZWrite Off
             Cull Off
 
