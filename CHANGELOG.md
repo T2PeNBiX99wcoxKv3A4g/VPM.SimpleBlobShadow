@@ -1,5 +1,22 @@
 # Changelog
 
+## [0.0.3](https://github.com/T2PeNBiX99wcoxKv3A4g/VPM.SimpleBlobShadow/compare/0.0.2..0.0.3) - 2026-06-10
+
+### 🐛 Bug Fixes
+
+- Update SimpleBlobShadow material color and shader blend mode settings - ([667a08c](https://github.com/T2PeNBiX99wcoxKv3A4g/VPM.SimpleBlobShadow/commit/667a08c9ded8459a63939d898272f37780d64d55))
+- Enable automatic API selection for iOS in project settings - ([863eee4](https://github.com/T2PeNBiX99wcoxKv3A4g/VPM.SimpleBlobShadow/commit/863eee49247be5d775000fcbcca70840e0a84946))
+
+### ⚙️ Miscellaneous Tasks
+
+- Bump version to 0.0.3 in SimpleBlobShadow package.json - ([a1e8679](https://github.com/T2PeNBiX99wcoxKv3A4g/VPM.SimpleBlobShadow/commit/a1e86790f6db507a174b0019f31bc49af07c9705))
+- Update Unity package dependencies and adjust iOS API settings - ([a5ad528](https://github.com/T2PeNBiX99wcoxKv3A4g/VPM.SimpleBlobShadow/commit/a5ad528d6df5d5571bc6a10d317111beea3576f8))
+
+### Action
+
+- Update `CHANGELOG.md` - ([c2fa2a7](https://github.com/T2PeNBiX99wcoxKv3A4g/VPM.SimpleBlobShadow/commit/c2fa2a70aa0909392c9c9aece94719577c46a1d5))
+
+
 ## [0.0.2](https://github.com/T2PeNBiX99wcoxKv3A4g/VPM.SimpleBlobShadow/compare/0.0.1..0.0.2) - 2026-06-10
 
 ### 🐛 Bug Fixes
