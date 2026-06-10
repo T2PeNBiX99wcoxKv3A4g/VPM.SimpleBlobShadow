@@ -1,9 +1,21 @@
 # Changelog
 
-## [unreleased]
+## [0.0.2](https://github.com/T2PeNBiX99wcoxKv3A4g/VPM.SimpleBlobShadow/compare/0.0.1..0.0.2) - 2026-06-10
+
+### 🐛 Bug Fixes
+
+- Update SimpleBlobShadow color and blend mode settings - ([25d4c1a](https://github.com/T2PeNBiX99wcoxKv3A4g/VPM.SimpleBlobShadow/commit/25d4c1aa444a937489dd4c1c189a4e35f6be6b25))
+- Replace GameObject, update collider, and enable automatic API for iOS - ([ac3ee9a](https://github.com/T2PeNBiX99wcoxKv3A4g/VPM.SimpleBlobShadow/commit/ac3ee9af62eeb24650ddd7af68878ec6a44b931e))
+- Adjust iOS settings and script metadata in project configuration - ([9bff5c6](https://github.com/T2PeNBiX99wcoxKv3A4g/VPM.SimpleBlobShadow/commit/9bff5c63c0ecf59cae1c8bc994c38de1fd6917b4))
+
+### ⚙️ Miscellaneous Tasks
+
+- Bump version to 0.0.2 in SimpleBlobShadow package.json - ([9b2a0a0](https://github.com/T2PeNBiX99wcoxKv3A4g/VPM.SimpleBlobShadow/commit/9b2a0a03a77ec700d68965af6eff223022ad5449))
+- Remove unused VRChat demo-template package - ([a983a29](https://github.com/T2PeNBiX99wcoxKv3A4g/VPM.SimpleBlobShadow/commit/a983a290dd784a3c7a011ba079bf2d0eb840b054))
 
 ### Action
 
+- Update `CHANGELOG.md` - ([add22aa](https://github.com/T2PeNBiX99wcoxKv3A4g/VPM.SimpleBlobShadow/commit/add22aa1ef3edd5baa6a6331da0e61d04df01f7f))
 - Update `CHANGELOG.md` - ([93c74e2](https://github.com/T2PeNBiX99wcoxKv3A4g/VPM.SimpleBlobShadow/commit/93c74e280997cf89c06ca6a89c1e01c997ba46fe))
 
 
