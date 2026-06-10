@@ -1,5 +1,12 @@
 # Changelog
 
+## [unreleased]
+
+### Action
+
+- Update `CHANGELOG.md` - ([93c74e2](https://github.com/T2PeNBiX99wcoxKv3A4g/VPM.SimpleBlobShadow/commit/93c74e280997cf89c06ca6a89c1e01c997ba46fe))
+
+
 ## [0.0.1] - 2026-06-10
 
 ### ⛰️  Features
