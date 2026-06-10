@@ -11,6 +11,7 @@ Shader "yky/SimpleBlobShadow"
         {
             "RenderType"="Transparent"
             "Queue"="Transparent"
+            "VRCFallback"="Particle"
         }
 
         Pass
