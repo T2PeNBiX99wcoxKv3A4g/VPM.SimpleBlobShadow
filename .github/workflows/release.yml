@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
   push:
     paths:
-      - 'Packages/io.github.ykysnk.simple-ao-blocker/package.json'
+      - 'Packages/io.github.ykysnk.simple-blob-shadow/package.json'
 
 jobs:
 
