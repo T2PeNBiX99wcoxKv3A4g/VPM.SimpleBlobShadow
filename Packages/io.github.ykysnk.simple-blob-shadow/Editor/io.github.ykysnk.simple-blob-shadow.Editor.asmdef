@@ -1,0 +1,14 @@
+{
+  "name": "io.github.ykysnk.simple-blob-shadow.Editor",
+  "references": [
+    "io.github.ykysnk.simple-blob-shadow"
+  ],
+  "includePlatforms": [],
+  "excludePlatforms": [],
+  "allowUnsafeCode": false,
+  "autoReferenced": true,
+  "overrideReferences": false,
+  "precompiledReferences": [],
+  "defineConstraints": [],
+  "optionalUnityReferences": []
+}
