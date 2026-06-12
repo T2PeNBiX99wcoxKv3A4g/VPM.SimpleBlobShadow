@@ -22,6 +22,10 @@ Shader "yky/SimpleBlobShadow"
         [Header(VRChat)]
         [Toggle] _HideInMirror ("Hide In Mirror", Float) = 0
         [Toggle] _HideInCamera ("Hide In Camera", Float) = 0
+
+        [Header(Advanced)]
+        [Toggle(MANUAL_FADE)] _ManualFade ("Manual Fade", Float) = 0
+        _ManualHeight ("Manual Height from Raycast (m)", Float) = 0.0
     }
 
     SubShader
@@ -61,6 +65,7 @@ Shader "yky/SimpleBlobShadow"
             #pragma fragment frag
             #pragma multi_compile_instancing
             #pragma target 3.0
+            #pragma shader_feature MANUAL_FADE
 
             #include "UnityCG.cginc"
 
@@ -84,6 +89,8 @@ Shader "yky/SimpleBlobShadow"
 
             float _HideInMirror;
             float _HideInCamera;
+
+            float _ManualHeight;
 
             struct appdata
             {
@@ -134,24 +141,28 @@ Shader "yky/SimpleBlobShadow"
                 float3 viewDirWS = normalize(i.viewDirWS);
                 float3 worldPos = _WorldSpaceCameraPos + viewDirWS * (eyeDepth / dot(viewDirWS, camForward));
                 float3 objectWorldPos = mul(unity_ObjectToWorld, float4(0, 0, 0, 1)).xyz;
-
-                float footY;
-                if (_FootWorldY < -999.0)
-                    footY = objectWorldPos.y;
-                else
-                    footY = _FootWorldY;
-
                 float2 footXZ = objectWorldPos.xz;
+
+                float heightFactor = 0.0;
+
+                #ifdef MANUAL_FADE
+                float manualHeightClamped = max(_ManualHeight, 0.0);
+                heightFactor = saturate(
+                    (manualHeightClamped - _HeightFadeStart) /
+                    max(_HeightFadeEnd - _HeightFadeStart, 0.001)
+                );
+                #else
+                float footY = (_FootWorldY < -999.0) ? objectWorldPos.y : _FootWorldY;
                 float heightAboveGround = footY - worldPos.y;
 
                 if (heightAboveGround < -max(_SlopeBias, 0.0)) discard;
-
                 heightAboveGround = max(heightAboveGround, 0.0);
 
-                float heightFactor = saturate(
+                heightFactor = saturate(
                     (heightAboveGround - _HeightFadeStart) /
                     max(_HeightFadeEnd - _HeightFadeStart, 0.001)
                 );
+                #endif
 
                 float heightAlpha = 1.0 - heightFactor;
                 float dynamicRadius = _ShadowRadius * (1.0 + heightFactor * _HeightRadiusMul);
