@@ -1,5 +1,17 @@
 # Changelog
 
+## [0.1.1](https://github.com/T2PeNBiX99wcoxKv3A4g/VPM.SimpleBlobShadow/compare/0.1.0..0.1.1) - 2026-06-12
+
+### ⚙️ Miscellaneous Tasks
+
+- Bump SimpleBlobShadow package version to 0.1.1 - ([45caf97](https://github.com/T2PeNBiX99wcoxKv3A4g/VPM.SimpleBlobShadow/commit/45caf97d3adf69bc9757d7b298b3f547937c4990))
+- Add blob shadow texture and update prefab icon metadata - ([7790b21](https://github.com/T2PeNBiX99wcoxKv3A4g/VPM.SimpleBlobShadow/commit/7790b21b21f4cd4038267967a118ab5071f5ef78))
+
+### Action
+
+- Update `CHANGELOG.md` - ([59666a6](https://github.com/T2PeNBiX99wcoxKv3A4g/VPM.SimpleBlobShadow/commit/59666a61b66fa3a5c38fccd77d13384aa4d0f532))
+
+
 ## [0.1.0](https://github.com/T2PeNBiX99wcoxKv3A4g/VPM.SimpleBlobShadow/compare/0.0.3..0.1.0) - 2026-06-12
 
 ### ⛰️  Features
