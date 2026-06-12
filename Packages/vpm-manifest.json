@@ -14,6 +14,27 @@
     },
     "com.vrchat.base": {
       "version": "3.10.3"
+    },
+    "com.amari-noa.blm-integration-core": {
+      "version": "1.2.0"
+    },
+    "io.github.ykysnk.modular-avatar-extensions": {
+      "version": "0.26.1"
+    },
+    "nadena.dev.modular-avatar": {
+      "version": "1.17.1"
+    },
+    "com.vrchat.avatars": {
+      "version": "3.10.3"
+    },
+    "io.github.ykysnk.simple-night-vision": {
+      "version": "0.2.7"
+    },
+    "one.razgriz.rats": {
+      "version": "1.3.1"
+    },
+    "jp.lilxyzw.liltoon": {
+      "version": "2.3.2"
     }
   },
   "locked": {
@@ -48,6 +69,64 @@
     },
     "com.vrchat.base": {
       "version": "3.10.3",
+      "dependencies": {}
+    },
+    "com.amari-noa.sqlite-net-vpm": {
+      "version": "1.0.0",
+      "dependencies": {}
+    },
+    "com.amari-noa.unity-editor-localization-core": {
+      "version": "1.0.0",
+      "dependencies": {}
+    },
+    "com.amari-noa.blm-integration-core": {
+      "version": "1.2.0",
+      "dependencies": {
+        "com.amari-noa.sqlite-net-vpm": "^1.0.0",
+        "com.amari-noa.unity-editor-localization-core": "^1.0.0",
+        "com.amari-noa.unitypackage-pipeline-core": "^1.3.0"
+      }
+    },
+    "com.amari-noa.unitypackage-pipeline-core": {
+      "version": "1.3.1",
+      "dependencies": {}
+    },
+    "nadena.dev.ndmf": {
+      "version": "1.13.1",
+      "dependencies": {}
+    },
+    "io.github.ykysnk.modular-avatar-extensions": {
+      "version": "0.26.1",
+      "dependencies": {
+        "io.github.ykysnk.localization": ">=0.7.2",
+        "io.github.ykysnk.utils": ">=0.44.2",
+        "nadena.dev.modular-avatar": ">=1.17.0"
+      }
+    },
+    "nadena.dev.modular-avatar": {
+      "version": "1.17.1",
+      "dependencies": {
+        "nadena.dev.ndmf": ">=1.11.0 <2.0.0-a"
+      }
+    },
+    "com.vrchat.avatars": {
+      "version": "3.10.3",
+      "dependencies": {
+        "com.vrchat.base": "3.10.3"
+      }
+    },
+    "io.github.ykysnk.simple-night-vision": {
+      "version": "0.2.7",
+      "dependencies": {}
+    },
+    "one.razgriz.rats": {
+      "version": "1.3.1",
+      "dependencies": {
+        "com.vrchat.base": "^3.4.0"
+      }
+    },
+    "jp.lilxyzw.liltoon": {
+      "version": "2.3.2",
       "dependencies": {}
     }
   }

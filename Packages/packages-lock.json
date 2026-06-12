@@ -1,5 +1,38 @@
 {
   "dependencies": {
+    "com.amari-noa.blm-integration-core": {
+      "version": "file:com.amari-noa.blm-integration-core",
+      "depth": 0,
+      "source": "embedded",
+      "dependencies": {}
+    },
+    "com.amari-noa.sqlite-net-vpm": {
+      "version": "file:com.amari-noa.sqlite-net-vpm",
+      "depth": 0,
+      "source": "embedded",
+      "dependencies": {}
+    },
+    "com.amari-noa.unity-editor-localization-core": {
+      "version": "file:com.amari-noa.unity-editor-localization-core",
+      "depth": 0,
+      "source": "embedded",
+      "dependencies": {}
+    },
+    "com.amari-noa.unitypackage-pipeline-core": {
+      "version": "file:com.amari-noa.unitypackage-pipeline-core",
+      "depth": 0,
+      "source": "embedded",
+      "dependencies": {
+        "com.unity.nuget.newtonsoft-json": "2.0.0"
+      }
+    },
+    "com.seaeees.simple-folder-icon": {
+      "version": "1.2.4",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {},
+      "url": "https://package.openupm.com"
+    },
     "com.unity.ai.navigation": {
       "version": "1.1.7",
       "depth": 0,
@@ -164,6 +197,12 @@
       },
       "url": "https://packages.unity.com"
     },
+    "com.vrchat.avatars": {
+      "version": "file:com.vrchat.avatars",
+      "depth": 0,
+      "source": "embedded",
+      "dependencies": {}
+    },
     "com.vrchat.base": {
       "version": "file:com.vrchat.base",
       "depth": 0,
@@ -202,8 +241,20 @@
       "source": "embedded",
       "dependencies": {}
     },
+    "io.github.ykysnk.modular-avatar-extensions": {
+      "version": "file:io.github.ykysnk.modular-avatar-extensions",
+      "depth": 0,
+      "source": "embedded",
+      "dependencies": {}
+    },
     "io.github.ykysnk.simple-blob-shadow": {
       "version": "file:io.github.ykysnk.simple-blob-shadow",
+      "depth": 0,
+      "source": "embedded",
+      "dependencies": {}
+    },
+    "io.github.ykysnk.simple-night-vision": {
+      "version": "file:io.github.ykysnk.simple-night-vision",
       "depth": 0,
       "source": "embedded",
       "dependencies": {}
@@ -226,6 +277,28 @@
       "source": "embedded",
       "dependencies": {}
     },
+    "jp.lilxyzw.liltoon": {
+      "version": "file:jp.lilxyzw.liltoon",
+      "depth": 0,
+      "source": "embedded",
+      "dependencies": {}
+    },
+    "nadena.dev.modular-avatar": {
+      "version": "file:nadena.dev.modular-avatar",
+      "depth": 0,
+      "source": "embedded",
+      "dependencies": {
+        "com.unity.nuget.newtonsoft-json": "2.0.0"
+      }
+    },
+    "nadena.dev.ndmf": {
+      "version": "file:nadena.dev.ndmf",
+      "depth": 0,
+      "source": "embedded",
+      "dependencies": {
+        "com.unity.modules.animation": "1.0.0"
+      }
+    },
     "net.nekobako.editor-patcher": {
       "version": "file:net.nekobako.editor-patcher",
       "depth": 0,
@@ -234,6 +307,12 @@
     },
     "net.nekobako.mask-texture-editor": {
       "version": "file:net.nekobako.mask-texture-editor",
+      "depth": 0,
+      "source": "embedded",
+      "dependencies": {}
+    },
+    "one.razgriz.rats": {
+      "version": "file:one.razgriz.rats",
       "depth": 0,
       "source": "embedded",
       "dependencies": {}
