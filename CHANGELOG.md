@@ -1,5 +1,43 @@
 # Changelog
 
+## [0.1.0](https://github.com/T2PeNBiX99wcoxKv3A4g/VPM.SimpleBlobShadow/compare/0.0.3..0.1.0) - 2026-06-12
+
+### ⛰️  Features
+
+- Add scale animation and size layer to SimpleBlobShadow with updated assets and prefab adjustments - ([d5f7cae](https://github.com/T2PeNBiX99wcoxKv3A4g/VPM.SimpleBlobShadow/commit/d5f7caeaf8e7047546479441259baf5abb4810a3))
+- Add Distance-based animation system to SimpleBlobShadow with new assets and prefab updates - ([f753262](https://github.com/T2PeNBiX99wcoxKv3A4g/VPM.SimpleBlobShadow/commit/f7532626cf043d51c3fbec7240c5bba1d29f7a2f))
+- Add manual fade and height customization to SimpleBlobShadow material and shader - ([251043a](https://github.com/T2PeNBiX99wcoxKv3A4g/VPM.SimpleBlobShadow/commit/251043a5e16dcbda48e48cf7322aaffdfb0f0274))
+
+### ⚙️ Miscellaneous Tasks
+
+- Remove unused animation asset and metadata from SimpleBlobShadow - ([1cac2aa](https://github.com/T2PeNBiX99wcoxKv3A4g/VPM.SimpleBlobShadow/commit/1cac2aaf0ec84afe275bac86a0d19eab9435733c))
+- Bump SimpleBlobShadow package version to 0.1.0 - ([36882b6](https://github.com/T2PeNBiX99wcoxKv3A4g/VPM.SimpleBlobShadow/commit/36882b6cd3668748d5b038ec363b903a94e238b6))
+- Update ProjectSettings to enable automatic API selection for iOS - ([511747b](https://github.com/T2PeNBiX99wcoxKv3A4g/VPM.SimpleBlobShadow/commit/511747b4082625c880047027499e0fbcd6df6220))
+- Update metadata and shader properties for SimpleBlobShadow - ([7cadb8d](https://github.com/T2PeNBiX99wcoxKv3A4g/VPM.SimpleBlobShadow/commit/7cadb8d7f845efe071d2c9259cdc352d15b893ce))
+- Add Gesture Manager, AV3 Emulator, and Avatar Utils packages to Unity dependencies and lock files - ([3fb85ec](https://github.com/T2PeNBiX99wcoxKv3A4g/VPM.SimpleBlobShadow/commit/3fb85ec00ebeb324d5017c49d4cfeb369cbba947))
+- Adjust SimpleBlobShadow material to increase shadow opacity to 1 - ([6ed5306](https://github.com/T2PeNBiX99wcoxKv3A4g/VPM.SimpleBlobShadow/commit/6ed530670e0f159897b361681b0ec4ef6e75186d))
+- Replace Other-Ref128+ToBypassBlobShadow material with SampleRef128+ToBypassBlobShadow including updated metadata - ([492431f](https://github.com/T2PeNBiX99wcoxKv3A4g/VPM.SimpleBlobShadow/commit/492431fd4463e6f2d85c65dc5dd76f63011eb114))
+- Add new animation and material assets with metadata for SimpleBlobShadow - ([0ff888f](https://github.com/T2PeNBiX99wcoxKv3A4g/VPM.SimpleBlobShadow/commit/0ff888ffa4c59b6ac63d4fc1835a2bb18444b52a))
+- Update SimpleBlobShadow material and shader properties for improved rendering - ([d642590](https://github.com/T2PeNBiX99wcoxKv3A4g/VPM.SimpleBlobShadow/commit/d642590e93ac0567e8374d16829f7c3a3417e0ba))
+- Add metadata file for SimpleBlobShadow animations folder - ([d2b162c](https://github.com/T2PeNBiX99wcoxKv3A4g/VPM.SimpleBlobShadow/commit/d2b162c91b64bf57d7c8df7c80af202c9db74b84))
+- Update ProjectSettings to modify mesh stripping and API configuration - ([51e4151](https://github.com/T2PeNBiX99wcoxKv3A4g/VPM.SimpleBlobShadow/commit/51e4151f9223853e32439245eb1237edbced2972))
+- Add metadata file for SimpleBlobShadow materials - ([a98e3cf](https://github.com/T2PeNBiX99wcoxKv3A4g/VPM.SimpleBlobShadow/commit/a98e3cf4d2f350c3692528a777218df09dd50644))
+- Add metadata file for SimpleBlobShadow prefabs - ([331a243](https://github.com/T2PeNBiX99wcoxKv3A4g/VPM.SimpleBlobShadow/commit/331a243bf353a9fd06c6437c2404abf501b8d352))
+- Add Yank Material Editor package to Unity dependencies and lock files - ([910c552](https://github.com/T2PeNBiX99wcoxKv3A4g/VPM.SimpleBlobShadow/commit/910c552a378187758b313626c96a81c6d264d2fa))
+- Add metadata file for SimpleBlobShadow shader package - ([768d3ee](https://github.com/T2PeNBiX99wcoxKv3A4g/VPM.SimpleBlobShadow/commit/768d3ee65132040011e0c70bbaec6690c18e3080))
+- Update Test.unity assets and metadata with new GameObject, components, and transformations - ([7394053](https://github.com/T2PeNBiX99wcoxKv3A4g/VPM.SimpleBlobShadow/commit/7394053497bffb315cd6114fee595506b6de13b4))
+- Add import index JSON file for BLM integration core - ([8625bf5](https://github.com/T2PeNBiX99wcoxKv3A4g/VPM.SimpleBlobShadow/commit/8625bf5a8e826bc5b825e2d4d8bc6641e5723831))
+- Restructure SimpleBlobShadow files, add prefabs, and introduce PlaneShadow shader - ([7ad0fec](https://github.com/T2PeNBiX99wcoxKv3A4g/VPM.SimpleBlobShadow/commit/7ad0fec7cd4ecdf950bc648aa8c1e01fd2007799))
+- Update EditorBuildSettings to include Oculus XR configuration - ([bd3d7fa](https://github.com/T2PeNBiX99wcoxKv3A4g/VPM.SimpleBlobShadow/commit/bd3d7fa672cd821e184751c50e09f17aa4ca8c55))
+- Add and update Unity package dependencies, configure scoped registries in manifest files - ([acc33b9](https://github.com/T2PeNBiX99wcoxKv3A4g/VPM.SimpleBlobShadow/commit/acc33b9ca88a059ce4f8f2a5b64396cdd1269c02))
+- Update ProjectSettings for API configuration and scoped registries - ([383bd3a](https://github.com/T2PeNBiX99wcoxKv3A4g/VPM.SimpleBlobShadow/commit/383bd3ad300d6261557d98261d8c4fbd237aa790))
+- Add lilToonSetting.json to configure lilToon shader project settings - ([58cdbf2](https://github.com/T2PeNBiX99wcoxKv3A4g/VPM.SimpleBlobShadow/commit/58cdbf24918e501b1a5892312a3b2acee63fea06))
+
+### Action
+
+- Update `CHANGELOG.md` - ([f9dded1](https://github.com/T2PeNBiX99wcoxKv3A4g/VPM.SimpleBlobShadow/commit/f9dded1f4794f862a98a075e27fbdc9244421b96))
+
+
 ## [0.0.3](https://github.com/T2PeNBiX99wcoxKv3A4g/VPM.SimpleBlobShadow/compare/0.0.2..0.0.3) - 2026-06-10
 
 ### 🐛 Bug Fixes
