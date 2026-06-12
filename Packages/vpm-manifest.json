@@ -35,6 +35,9 @@
     },
     "jp.lilxyzw.liltoon": {
       "version": "2.3.2"
+    },
+    "com.yank.material-editor": {
+      "version": "1.0.0"
     }
   },
   "locked": {
@@ -127,6 +130,10 @@
     },
     "jp.lilxyzw.liltoon": {
       "version": "2.3.2",
+      "dependencies": {}
+    },
+    "com.yank.material-editor": {
+      "version": "1.0.0",
       "dependencies": {}
     }
   }
