@@ -48,6 +48,14 @@ Shader "yky/SimpleBlobShadow"
             ZTest Always
             Blend SrcAlpha OneMinusSrcAlpha
 
+            Stencil
+            {
+                Ref 128
+                ReadMask 128
+                Comp NotEqual
+                Pass Keep
+            }
+
             CGPROGRAM
             #pragma vertex   vert
             #pragma fragment frag
