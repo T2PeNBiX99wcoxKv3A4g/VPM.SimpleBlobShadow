@@ -277,6 +277,12 @@
       "source": "embedded",
       "dependencies": {}
     },
+    "jp.lilxyzw.avatar-utils": {
+      "version": "file:jp.lilxyzw.avatar-utils",
+      "depth": 0,
+      "source": "embedded",
+      "dependencies": {}
+    },
     "jp.lilxyzw.editortoolbox": {
       "version": "file:jp.lilxyzw.editortoolbox",
       "depth": 0,
@@ -285,6 +291,12 @@
     },
     "jp.lilxyzw.liltoon": {
       "version": "file:jp.lilxyzw.liltoon",
+      "depth": 0,
+      "source": "embedded",
+      "dependencies": {}
+    },
+    "lyuma.av3emulator": {
+      "version": "file:lyuma.av3emulator",
       "depth": 0,
       "source": "embedded",
       "dependencies": {}
@@ -319,6 +331,12 @@
     },
     "one.razgriz.rats": {
       "version": "file:one.razgriz.rats",
+      "depth": 0,
+      "source": "embedded",
+      "dependencies": {}
+    },
+    "vrchat.blackstartx.gesture-manager": {
+      "version": "file:vrchat.blackstartx.gesture-manager",
       "depth": 0,
       "source": "embedded",
       "dependencies": {}

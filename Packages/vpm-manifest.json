@@ -38,6 +38,15 @@
     },
     "com.yank.material-editor": {
       "version": "1.0.0"
+    },
+    "vrchat.blackstartx.gesture-manager": {
+      "version": "3.9.8"
+    },
+    "lyuma.av3emulator": {
+      "version": "3.4.13"
+    },
+    "jp.lilxyzw.avatar-utils": {
+      "version": "2.1.2"
     }
   },
   "locked": {
@@ -134,6 +143,22 @@
     },
     "com.yank.material-editor": {
       "version": "1.0.0",
+      "dependencies": {}
+    },
+    "vrchat.blackstartx.gesture-manager": {
+      "version": "3.9.8",
+      "dependencies": {
+        "com.vrchat.avatars": ">=3.5.2 <3.11.X"
+      }
+    },
+    "lyuma.av3emulator": {
+      "version": "3.4.13",
+      "dependencies": {
+        "com.vrchat.avatars": "^3.1.0"
+      }
+    },
+    "jp.lilxyzw.avatar-utils": {
+      "version": "2.1.2",
       "dependencies": {}
     }
   }
