@@ -132,6 +132,8 @@ Shader "yky/SimpleBlobShadow"
                 float3 viewDir = i.worldPos - _WorldSpaceCameraPos;
                 // Avoid division by zero or near-zero if camera is very close to the vertex
                 // screenPos.w is the view-space Z.
+                // I don't know what happens in some worlds, some worlds seem to be broken in firstperson for whatever reason.
+                // Maybe because of the camera's near clip plane setting are too low i guess?
                 float3 ray = viewDir / max(i.screenPos.w, 0.00001);
                 float3 worldPos = _WorldSpaceCameraPos + ray * eyeDepth;
                 float3 objectWorldPos = mul(unity_ObjectToWorld, float4(0, 0, 0, 1)).xyz;
