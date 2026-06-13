@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Distance_Min
+  m_Name: Distance_Plane_Max
   serializedVersion: 7
   m_Legacy: 0
   m_Compressed: 0
@@ -23,7 +23,7 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: 0
+        value: 1000
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -33,8 +33,8 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    attribute: material._ManualHeight
-    path: Proxy/Raycast/ShadowCube
+    attribute: material._Height
+    path: Proxy/Raycast/Hit/Shadow
     classID: 23
     script: {fileID: 0}
     flags: 0
@@ -47,8 +47,8 @@ AnimationClip:
   m_ClipBindingConstant:
     genericBindings:
     - serializedVersion: 2
-      path: 360178638
-      attribute: 2289446487
+      path: 1876292908
+      attribute: 2345797562
       script: {fileID: 0}
       typeID: 23
       customType: 22
@@ -83,7 +83,7 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: 0
+        value: 1000
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -93,8 +93,8 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    attribute: material._ManualHeight
-    path: Proxy/Raycast/ShadowCube
+    attribute: material._Height
+    path: Proxy/Raycast/Hit/Shadow
     classID: 23
     script: {fileID: 0}
     flags: 0

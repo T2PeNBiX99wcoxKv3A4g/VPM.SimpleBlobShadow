@@ -6,10 +6,10 @@ BlendTree:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Distance
+  m_Name: Distance_Plane
   m_Childs:
   - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: 51e94ee51c7a68a4ead72cd3bf332084, type: 2}
+    m_Motion: {fileID: 7400000, guid: cef9a2931f51ef542b19f84b8f2dbfff, type: 2}
     m_Threshold: 0
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
@@ -17,7 +17,7 @@ BlendTree:
     m_DirectBlendParameter: SimpleBlobShadow/Raycast_Distance
     m_Mirror: 0
   - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: ab411484225ab424e9b7ca9d6e1d8dce, type: 2}
+    m_Motion: {fileID: 7400000, guid: 5e07bf3522678cf438339ff6f97220ed, type: 2}
     m_Threshold: 1000
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
