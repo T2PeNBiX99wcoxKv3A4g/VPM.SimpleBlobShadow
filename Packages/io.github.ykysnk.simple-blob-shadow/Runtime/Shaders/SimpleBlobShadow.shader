@@ -25,7 +25,7 @@ Shader "yky/SimpleBlobShadow"
 
         [Header(Advanced)]
         [Toggle(MANUAL_FADE)] _ManualFade ("Manual Fade", Float) = 0
-        [Toggle(LOCK_COLOR)] _LockColor ("Lock Color (If color always white for whatever reason.)", Float) = 0
+        [Toggle(LOCK_COLOR)] _LockColor ("Lock Color (If color always turn white for whatever reason.)", Float) = 0
         _ManualHeight ("Manual Height from Raycast (m)", Float) = 0.0
     }
 

@@ -21,7 +21,7 @@ Shader "yky/SimplePlaneShadow"
         [Toggle] _HideInCamera ("Hide In Camera", Float) = 0
 
         [Header(Advanced)]
-        [Toggle(LOCK_COLOR)] _LockColor ("Lock Color (If color always white for whatever reason.)", Float) = 0
+        [Toggle(LOCK_COLOR)] _LockColor ("Lock Color (If color always turn white for whatever reason.)", Float) = 0
     }
 
     SubShader
