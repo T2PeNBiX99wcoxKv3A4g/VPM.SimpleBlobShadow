@@ -38,11 +38,6 @@ Shader "yky/SimpleBlobShadow"
             "VRCFallback" = "Hidden"
         }
 
-        GrabPass
-        {
-            "_GrabTexture"
-        }
-
         Pass
         {
             Name "BlobShadow"
@@ -69,8 +64,6 @@ Shader "yky/SimpleBlobShadow"
 
             #include "UnityCG.cginc"
 
-            sampler2D _GrabTexture;
-
             UNITY_DECLARE_DEPTH_TEXTURE(_CameraDepthTexture);
 
             float _VRChatCameraMode;
@@ -89,7 +82,6 @@ Shader "yky/SimpleBlobShadow"
 
             float _HideInMirror;
             float _HideInCamera;
-
             float _ManualHeight;
 
             struct appdata
@@ -101,9 +93,9 @@ Shader "yky/SimpleBlobShadow"
             struct v2f
             {
                 float4 pos : SV_POSITION;
-                float4 grabPos : TEXCOORD0;
-                float4 screenPos: TEXCOORD1;
-                float3 viewDirWS: TEXCOORD2;
+                float4 screenPos: TEXCOORD0;
+                float3 viewDirWS: TEXCOORD1;
+                UNITY_VERTEX_INPUT_INSTANCE_ID
                 UNITY_VERTEX_OUTPUT_STEREO
             };
 
@@ -114,7 +106,6 @@ Shader "yky/SimpleBlobShadow"
                 UNITY_INITIALIZE_VERTEX_OUTPUT_STEREO(o);
 
                 o.pos = UnityObjectToClipPos(v.vertex);
-                o.grabPos = ComputeGrabScreenPos(o.pos);
                 o.screenPos = ComputeScreenPos(o.pos);
 
                 float3 worldPos = mul(unity_ObjectToWorld, v.vertex).xyz;
@@ -130,16 +121,17 @@ Shader "yky/SimpleBlobShadow"
                 if (_HideInCamera > 0.5 && _VRChatCameraMode != 0.0) discard;
                 if (_HideInMirror > 0.5 && (_VRChatMirrorMode != 0.0 || _VRChatFaceMirrorMode != 0.0)) discard;
 
-                float2 screenUV = i.screenPos.xy / i.screenPos.w;
-                float rawDepth = SAMPLE_DEPTH_TEXTURE(_CameraDepthTexture, screenUV);
+                float2 uv = i.screenPos.xy / i.screenPos.w;
+                float2 stereoUV = UnityStereoTransformScreenSpaceTex(uv);
 
+                float rawDepth = SAMPLE_DEPTH_TEXTURE(_CameraDepthTexture, stereoUV);
                 float linearDepth = Linear01Depth(rawDepth);
                 if (linearDepth > 0.9999) discard;
 
                 float eyeDepth = LinearEyeDepth(rawDepth);
-                float3 camForward = -UNITY_MATRIX_I_V._m02_m12_m22;
-                float3 viewDirWS = normalize(i.viewDirWS);
-                float3 worldPos = _WorldSpaceCameraPos + viewDirWS * (eyeDepth / dot(viewDirWS, camForward));
+
+                float3 ray = i.viewDirWS / i.screenPos.w;
+                float3 worldPos = _WorldSpaceCameraPos + ray * eyeDepth;
                 float3 objectWorldPos = mul(unity_ObjectToWorld, float4(0, 0, 0, 1)).xyz;
                 float2 footXZ = objectWorldPos.xz;
 
@@ -180,10 +172,7 @@ Shader "yky/SimpleBlobShadow"
                 float finalAlpha = shadowMask * heightAlpha * _ShadowOpacity;
                 if (finalAlpha < 0.002) discard;
 
-                float4 grabColor = tex2Dproj(_GrabTexture, i.grabPos);
-                float3 shadowedColor = lerp(grabColor.rgb, _ShadowColor.rgb, finalAlpha);
-
-                return fixed4(shadowedColor, 1.0);
+                return fixed4(_ShadowColor.rgb, finalAlpha);
             }
             ENDCG
         }
