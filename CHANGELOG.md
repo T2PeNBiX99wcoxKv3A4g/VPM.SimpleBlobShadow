@@ -1,5 +1,27 @@
 # Changelog
 
+## [0.2.2](https://github.com/T2PeNBiX99wcoxKv3A4g/VPM.SimpleBlobShadow/compare/0.2.1..0.2.2) - 2026-06-13
+
+### ⚙️ Miscellaneous Tasks
+
+- Bump package version to 0.2.2 - ([e428120](https://github.com/T2PeNBiX99wcoxKv3A4g/VPM.SimpleBlobShadow/commit/e42812066a4080fd4a374b476a1bd8354e0657e5))
+- Add SimpleBlobShadow_Raycast prefab, materials, and metadata files - ([9ca8d72](https://github.com/T2PeNBiX99wcoxKv3A4g/VPM.SimpleBlobShadow/commit/9ca8d722f9a6e0c971535ab73a2f4714e589bb6d))
+- Add SimpleBlobShadow_Raycast_LockColor prefab, material, and metadata files - ([b22bfa0](https://github.com/T2PeNBiX99wcoxKv3A4g/VPM.SimpleBlobShadow/commit/b22bfa0f122fe38d271f4809f798526b63e77b3f))
+- Add SimpleBlobShadow_LockColor prefab, material, and metadata files - ([76d38c1](https://github.com/T2PeNBiX99wcoxKv3A4g/VPM.SimpleBlobShadow/commit/76d38c113f87475594e60240b7f317e93252bef4))
+- Add SimplePlaneShadow_LockColor prefab, material, and metadata files - ([2986814](https://github.com/T2PeNBiX99wcoxKv3A4g/VPM.SimpleBlobShadow/commit/298681484076f184f7835129fea8c06ee5301013))
+- Add SimplePlaneShadow_MAEX prefab and metadata files - ([82316f1](https://github.com/T2PeNBiX99wcoxKv3A4g/VPM.SimpleBlobShadow/commit/82316f1533044a2cd8ffc3040a71c8d26c579d6e))
+- Remove SimpleBlobShadowRaycast prefab, materials, and metadata files - ([61a3686](https://github.com/T2PeNBiX99wcoxKv3A4g/VPM.SimpleBlobShadow/commit/61a3686ff53a1d85d97d5ddafb91571100d82d74))
+- Add SimplePlaneShadow_MAEX_LockColor prefab and metadata files - ([3b90c43](https://github.com/T2PeNBiX99wcoxKv3A4g/VPM.SimpleBlobShadow/commit/3b90c43e9685da275632ca5189e7197bdcd1de63))
+- Remove SimplePlaneShadowMAEX prefab and associated metadata files - ([2ec3124](https://github.com/T2PeNBiX99wcoxKv3A4g/VPM.SimpleBlobShadow/commit/2ec3124ff11276c64c2a448f1ca2fa6518ef17e6))
+- Update `LOCK_COLOR` toggle descriptions in shaders for clarity - ([85972d7](https://github.com/T2PeNBiX99wcoxKv3A4g/VPM.SimpleBlobShadow/commit/85972d7b4ce33a80f0654f682d35ad469c35d995))
+- Add `LOCK_COLOR` toggle to shaders for forced black color rendering - ([986ac23](https://github.com/T2PeNBiX99wcoxKv3A4g/VPM.SimpleBlobShadow/commit/986ac23d272073677cd916ad95cf8df490c91881))
+- Remove ProjectSettings.asset to clean up unused Unity project settings - ([f6016b5](https://github.com/T2PeNBiX99wcoxKv3A4g/VPM.SimpleBlobShadow/commit/f6016b5041fad7255081587a3a0148b4580d809d))
+
+### Action
+
+- Update `CHANGELOG.md` - ([7c1ba9c](https://github.com/T2PeNBiX99wcoxKv3A4g/VPM.SimpleBlobShadow/commit/7c1ba9cf98c02b6dce67b69cb8e2d738b3eb6caf))
+
+
 ## [0.2.1](https://github.com/T2PeNBiX99wcoxKv3A4g/VPM.SimpleBlobShadow/compare/0.2.0..0.2.1) - 2026-06-13
 
 ### ⚙️ Miscellaneous Tasks
