@@ -1,5 +1,17 @@
 # Changelog
 
+## [0.2.1](https://github.com/T2PeNBiX99wcoxKv3A4g/VPM.SimpleBlobShadow/compare/0.2.0..0.2.1) - 2026-06-13
+
+### ⚙️ Miscellaneous Tasks
+
+- Bump version to 0.2.1 in package.json - ([7ab9882](https://github.com/T2PeNBiX99wcoxKv3A4g/VPM.SimpleBlobShadow/commit/7ab988208b068f826a9f34c07fcf64d9bee8701d))
+- Refine SimplePlaneShadow shader to use dynamicRadius for soft edge calculation - ([904ceb8](https://github.com/T2PeNBiX99wcoxKv3A4g/VPM.SimpleBlobShadow/commit/904ceb81f1da0667690a7db869e5fc90faafe8b0))
+
+### Action
+
+- Update `CHANGELOG.md` - ([27245d4](https://github.com/T2PeNBiX99wcoxKv3A4g/VPM.SimpleBlobShadow/commit/27245d455a389b83cf4c537daaca899df4093345))
+
+
 ## [0.2.0](https://github.com/T2PeNBiX99wcoxKv3A4g/VPM.SimpleBlobShadow/compare/0.1.1..0.2.0) - 2026-06-13
 
 ### ⚙️ Miscellaneous Tasks
