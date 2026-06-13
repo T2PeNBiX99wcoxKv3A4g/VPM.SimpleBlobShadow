@@ -1,7 +1,7 @@
 {
   "name": "io.github.ykysnk.simple-blob-shadow",
   "displayName": "Simple Blob Shadow",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "unity": "2022.3",
   "description": "Simple shadow for blob shadow.",
   "gitDependencies": {},
