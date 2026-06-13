@@ -1,5 +1,38 @@
 # Changelog
 
+## [0.2.0](https://github.com/T2PeNBiX99wcoxKv3A4g/VPM.SimpleBlobShadow/compare/0.1.1..0.2.0) - 2026-06-13
+
+### ⚙️ Miscellaneous Tasks
+
+- Bump version to 0.2.0 in package.json - ([b24fd64](https://github.com/T2PeNBiX99wcoxKv3A4g/VPM.SimpleBlobShadow/commit/b24fd6426dec87300a2670f7961f358ee0da6489))
+- Add SimplePlaneShadowMAEX prefab and metadata files - ([c060287](https://github.com/T2PeNBiX99wcoxKv3A4g/VPM.SimpleBlobShadow/commit/c0602879ad6dea484f743164c4b2d11f5bc8c7b2))
+- Adjust SimplePlaneShadow prefab positions and transform settings for consistency - ([548e8b5](https://github.com/T2PeNBiX99wcoxKv3A4g/VPM.SimpleBlobShadow/commit/548e8b520ad3599a3c8e35887eb849dc64175a5a))
+- Enhance SimplePlaneShadow shader with height-based fade and dynamic radius adjustments - ([b986f32](https://github.com/T2PeNBiX99wcoxKv3A4g/VPM.SimpleBlobShadow/commit/b986f321133f08e8eee1779317b7544854c9f46c))
+- Replace Distance animations with Distance_Plane animations and add SimplePlaneShadow prefab - ([a4c6965](https://github.com/T2PeNBiX99wcoxKv3A4g/VPM.SimpleBlobShadow/commit/a4c69651e89572e33c7e38c56cb29df2a2638235))
+- Add SimpleBlobShadowRaycast prefab and update SimpleBlobShadow prefab to support raycast-based shadow features - ([f6f1b4c](https://github.com/T2PeNBiX99wcoxKv3A4g/VPM.SimpleBlobShadow/commit/f6f1b4caf61d7f304fabd09a4ff40ea28b8596b9))
+- Remove unused Distance layer and parameters from SimpleBlobShadow controller - ([d6b9658](https://github.com/T2PeNBiX99wcoxKv3A4g/VPM.SimpleBlobShadow/commit/d6b96581b6fbf7ffaed38a5d29b9627570f38c3b))
+- Update SimpleBlobShadow material to disable MANUAL_FADE and adjust default _ManualFade value - ([5454a6e](https://github.com/T2PeNBiX99wcoxKv3A4g/VPM.SimpleBlobShadow/commit/5454a6e8060639d2433580046f166da6e3c03a02))
+- Add SimplePlaneShadow material and metadata files - ([d46b08a](https://github.com/T2PeNBiX99wcoxKv3A4g/VPM.SimpleBlobShadow/commit/d46b08afc5a511df9aa3bcee97d01240eb163a2f))
+- Add SimpleBlobShadowRaycast material and metadata files - ([2262606](https://github.com/T2PeNBiX99wcoxKv3A4g/VPM.SimpleBlobShadow/commit/2262606bdda5cf859bdfee47d267d9cd0dc9a1b4))
+- Update Scale animation paths to remove unnecessary Raycast references - ([7e15713](https://github.com/T2PeNBiX99wcoxKv3A4g/VPM.SimpleBlobShadow/commit/7e15713e18b4a47293b3880158641f1679454341))
+- Add Scale_Raycast animation and SimpleBlobShadowRaycast controller for blob shadow scaling adjustments - ([3f63b1f](https://github.com/T2PeNBiX99wcoxKv3A4g/VPM.SimpleBlobShadow/commit/3f63b1f4b46d966f2945281e5a6fd289573cb1ec))
+- Change default values for HideInMirror and HideInCamera toggles in SimplePlaneShadow shader - ([a74dde9](https://github.com/T2PeNBiX99wcoxKv3A4g/VPM.SimpleBlobShadow/commit/a74dde904c7e326c3668c8384e0cf88aeb78ca83))
+- Add clarification comments for camera near clip plane behavior in SimpleBlobShadow shader - ([cc444c1](https://github.com/T2PeNBiX99wcoxKv3A4g/VPM.SimpleBlobShadow/commit/cc444c11d01cb4acb964d6c49f5a8e5c34ae88c3))
+- Refactor SimpleBlobShadow shader to use world position instead of view direction - ([f597661](https://github.com/T2PeNBiX99wcoxKv3A4g/VPM.SimpleBlobShadow/commit/f59766149f55979b28611b330b43f35ebb139b24))
+- Add value clamping and improved range for Shadow Radius in SimpleBlobShadow shader - ([d07ea40](https://github.com/T2PeNBiX99wcoxKv3A4g/VPM.SimpleBlobShadow/commit/d07ea40a4331e64ff83d40dfe8309fb5e42704da))
+- Remove unused GraphicsSettings and lilToon settings files - ([a813cac](https://github.com/T2PeNBiX99wcoxKv3A4g/VPM.SimpleBlobShadow/commit/a813cac9365a98a26e28045ebd2a791b2eab71bb))
+- Update .gitignore - ([992b594](https://github.com/T2PeNBiX99wcoxKv3A4g/VPM.SimpleBlobShadow/commit/992b594d8a22a039cd6039b35a0750e3a57228ca))
+- Remove unused grab pass and related code from SimpleBlobShadow shader - ([1ae97a0](https://github.com/T2PeNBiX99wcoxKv3A4g/VPM.SimpleBlobShadow/commit/1ae97a04e0f3bc21357a5be4aff3e194410f2702))
+- Disable fog stripping in GraphicsSettings - ([f789f33](https://github.com/T2PeNBiX99wcoxKv3A4g/VPM.SimpleBlobShadow/commit/f789f3356e284e59f8b9087f804609648490813f))
+- Enable fog stripping in GraphicsSettings - ([9e1a42d](https://github.com/T2PeNBiX99wcoxKv3A4g/VPM.SimpleBlobShadow/commit/9e1a42deb48ef46f11bb6f31d94a0229668ee006))
+- Enable automatic API selection for iOS and POM feature in lilToon settings - ([9b9c8b9](https://github.com/T2PeNBiX99wcoxKv3A4g/VPM.SimpleBlobShadow/commit/9b9c8b9756bd8a6f620c72e7cedff3fbb6186449))
+- Disable automatic API selection for iOS in ProjectSettings - ([2c0ea08](https://github.com/T2PeNBiX99wcoxKv3A4g/VPM.SimpleBlobShadow/commit/2c0ea08c7a32efa4ebd9137acb00b68ae24e2ad4))
+
+### Action
+
+- Update `CHANGELOG.md` - ([0447ec7](https://github.com/T2PeNBiX99wcoxKv3A4g/VPM.SimpleBlobShadow/commit/0447ec7904be8023108a4b2f114341c03832ebfa))
+
+
 ## [0.1.1](https://github.com/T2PeNBiX99wcoxKv3A4g/VPM.SimpleBlobShadow/compare/0.1.0..0.1.1) - 2026-06-12
 
 ### ⚙️ Miscellaneous Tasks
