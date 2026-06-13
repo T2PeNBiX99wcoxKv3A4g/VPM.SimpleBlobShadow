@@ -107,7 +107,8 @@ Shader "yky/SimplePlaneShadow"
 
                 float2 centerUV = i.uv - float2(0.5, 0.5);
                 float dist = length(centerUV);
-                float softEdge = _ShadowRadius * _ShadowSoftness;
+
+                float softEdge = dynamicRadius * _ShadowSoftness;
                 float shadowMask = 1.0 - smoothstep(
                     dynamicRadius - softEdge,
                     dynamicRadius,
