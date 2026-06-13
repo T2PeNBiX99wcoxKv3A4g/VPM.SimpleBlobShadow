@@ -175,7 +175,6 @@ Shader "yky/SimpleBlobShadow"
 
                 float finalAlpha = saturate(shadowMask * heightAlpha * _ShadowOpacity);
                 if (finalAlpha < 0.002) discard;
-
                 return fixed4(_ShadowColor.rgb, finalAlpha);
             }
             ENDCG
