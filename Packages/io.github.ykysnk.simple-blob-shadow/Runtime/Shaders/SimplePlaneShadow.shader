@@ -11,8 +11,8 @@ Shader "yky/SimplePlaneShadow"
         _ShadowColor ("Shadow Color", Color) = (0, 0, 0, 1)
 
         [Header(VRChat)]
-        [Toggle] _HideInMirror ("Hide In Mirror", Float) = 1
-        [Toggle] _HideInCamera ("Hide In Camera", Float) = 1
+        [Toggle] _HideInMirror ("Hide In Mirror", Float) = 0
+        [Toggle] _HideInCamera ("Hide In Camera", Float) = 0
     }
 
     SubShader
