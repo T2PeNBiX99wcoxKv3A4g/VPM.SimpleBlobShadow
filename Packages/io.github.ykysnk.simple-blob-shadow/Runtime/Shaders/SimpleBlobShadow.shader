@@ -94,7 +94,7 @@ Shader "yky/SimpleBlobShadow"
             {
                 float4 pos : SV_POSITION;
                 float4 screenPos: TEXCOORD0;
-                float3 viewDirWS: TEXCOORD1;
+                float3 worldPos : TEXCOORD1;
                 UNITY_VERTEX_INPUT_INSTANCE_ID
                 UNITY_VERTEX_OUTPUT_STEREO
             };
@@ -107,9 +107,7 @@ Shader "yky/SimpleBlobShadow"
 
                 o.pos = UnityObjectToClipPos(v.vertex);
                 o.screenPos = ComputeScreenPos(o.pos);
-
-                float3 worldPos = mul(unity_ObjectToWorld, v.vertex).xyz;
-                o.viewDirWS = worldPos - _WorldSpaceCameraPos;
+                o.worldPos = mul(unity_ObjectToWorld, v.vertex).xyz;
 
                 return o;
             }
@@ -130,7 +128,11 @@ Shader "yky/SimpleBlobShadow"
 
                 float eyeDepth = LinearEyeDepth(rawDepth);
 
-                float3 ray = i.viewDirWS / i.screenPos.w;
+                // Reconstruct world position from camera to the depth surface
+                float3 viewDir = i.worldPos - _WorldSpaceCameraPos;
+                // Avoid division by zero or near-zero if camera is very close to the vertex
+                // screenPos.w is the view-space Z.
+                float3 ray = viewDir / max(i.screenPos.w, 0.00001);
                 float3 worldPos = _WorldSpaceCameraPos + ray * eyeDepth;
                 float3 objectWorldPos = mul(unity_ObjectToWorld, float4(0, 0, 0, 1)).xyz;
                 float2 footXZ = objectWorldPos.xz;
@@ -160,7 +162,7 @@ Shader "yky/SimpleBlobShadow"
                 float dynamicRadius = saturate(_ShadowRadius * (1.0 + heightFactor * _HeightRadiusMul));
 
                 float2 delta = worldPos.xz - footXZ;
-                float dist = saturate(length(delta));
+                float dist = length(delta);
 
                 float softEdge = dynamicRadius * _ShadowSoftness;
                 float shadowMask = 1.0 - smoothstep(
