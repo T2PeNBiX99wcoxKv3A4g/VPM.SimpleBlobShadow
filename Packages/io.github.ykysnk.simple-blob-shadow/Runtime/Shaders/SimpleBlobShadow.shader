@@ -25,6 +25,7 @@ Shader "yky/SimpleBlobShadow"
 
         [Header(Advanced)]
         [Toggle(MANUAL_FADE)] _ManualFade ("Manual Fade", Float) = 0
+        [Toggle(LOCK_COLOR)] _LockColor ("Lock Color (If color always white for whatever reason.)", Float) = 0
         _ManualHeight ("Manual Height from Raycast (m)", Float) = 0.0
     }
 
@@ -61,6 +62,7 @@ Shader "yky/SimpleBlobShadow"
             #pragma multi_compile_instancing
             #pragma target 3.0
             #pragma shader_feature MANUAL_FADE
+            #pragma shader_feature LOCK_COLOR
 
             #include "UnityCG.cginc"
 
@@ -175,7 +177,11 @@ Shader "yky/SimpleBlobShadow"
 
                 float finalAlpha = saturate(shadowMask * heightAlpha * _ShadowOpacity);
                 if (finalAlpha < 0.002) discard;
+                #if LOCK_COLOR
+                return fixed4(0, 0, 0, finalAlpha);
+                #else
                 return fixed4(_ShadowColor.rgb, finalAlpha);
+                #endif
             }
             ENDCG
         }

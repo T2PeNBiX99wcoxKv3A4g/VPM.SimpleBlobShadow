@@ -19,6 +19,9 @@ Shader "yky/SimplePlaneShadow"
         [Header(VRChat)]
         [Toggle] _HideInMirror ("Hide In Mirror", Float) = 0
         [Toggle] _HideInCamera ("Hide In Camera", Float) = 0
+
+        [Header(Advanced)]
+        [Toggle(LOCK_COLOR)] _LockColor ("Lock Color (If color always white for whatever reason.)", Float) = 0
     }
 
     SubShader
@@ -45,6 +48,7 @@ Shader "yky/SimplePlaneShadow"
             #pragma fragment frag
             #pragma multi_compile_instancing
             #pragma target 3.0
+            #pragma shader_feature LOCK_COLOR
 
             #include "UnityCG.cginc"
 
@@ -117,7 +121,11 @@ Shader "yky/SimplePlaneShadow"
 
                 float finalAlpha = saturate(shadowMask * heightAlpha * _ShadowOpacity);
                 if (finalAlpha < 0.002) discard;
+                #if LOCK_COLOR
+                return fixed4(0, 0, 0, finalAlpha);
+                #else
                 return fixed4(_ShadowColor.rgb, finalAlpha);
+                #endif
             }
             ENDCG
         }
