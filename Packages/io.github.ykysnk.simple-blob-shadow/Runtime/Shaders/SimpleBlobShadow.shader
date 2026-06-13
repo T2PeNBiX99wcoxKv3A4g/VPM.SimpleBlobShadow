@@ -5,7 +5,7 @@ Shader "yky/SimpleBlobShadow"
     Properties
     {
         [Header(Shadow Shape)]
-        _ShadowRadius ("Shadow Radius (world units)", Float) = 0.4
+        _ShadowRadius ("Shadow Radius (world units)", Range(0.01, 1.0)) = 0.4
         _ShadowSoftness ("Edge Softness", Range(0.01, 1.0)) = 0.3
         _ShadowOpacity ("Max Opacity", Range(0.0, 1.0)) = 0.6
         _ShadowColor ("Shadow Color", Color) = (0, 0, 0, 1)
@@ -157,10 +157,10 @@ Shader "yky/SimpleBlobShadow"
                 #endif
 
                 float heightAlpha = 1.0 - heightFactor;
-                float dynamicRadius = _ShadowRadius * (1.0 + heightFactor * _HeightRadiusMul);
+                float dynamicRadius = saturate(_ShadowRadius * (1.0 + heightFactor * _HeightRadiusMul));
 
                 float2 delta = worldPos.xz - footXZ;
-                float dist = length(delta);
+                float dist = saturate(length(delta));
 
                 float softEdge = dynamicRadius * _ShadowSoftness;
                 float shadowMask = 1.0 - smoothstep(
@@ -169,7 +169,7 @@ Shader "yky/SimpleBlobShadow"
                     dist
                 );
 
-                float finalAlpha = shadowMask * heightAlpha * _ShadowOpacity;
+                float finalAlpha = saturate(shadowMask * heightAlpha * _ShadowOpacity);
                 if (finalAlpha < 0.002) discard;
 
                 return fixed4(_ShadowColor.rgb, finalAlpha);
