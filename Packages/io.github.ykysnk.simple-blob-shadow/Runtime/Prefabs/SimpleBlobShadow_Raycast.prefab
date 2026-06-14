@@ -26,7 +26,7 @@ Transform:
   m_GameObject: {fileID: 1511009714625210181}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.00011370046, y: 0.33033866, z: 0.010763676}
+  m_LocalPosition: {x: -0.00011370046, y: 0.41833866, z: 0.010763676}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -227,7 +227,7 @@ Transform:
   m_GameObject: {fileID: 5876645168985035415}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.066, z: 0}
+  m_LocalPosition: {x: 0, y: -0.1, z: 0}
   m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -361,7 +361,7 @@ MonoBehaviour:
   m_inverted: 1
   m_objects:
   - Object:
-      referencePath: SimpleBlobShadowRaycast/Proxy/Raycast/ShadowCube
+      referencePath: SimpleBlobShadow_Raycast/Proxy/Raycast/ShadowCube
       targetObject: {fileID: 5876645168985035415}
     Active: 0
 --- !u!1 &7465285211308466143
@@ -390,7 +390,7 @@ Transform:
   m_GameObject: {fileID: 7465285211308466143}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.00011370045, y: 0.33033866, z: 0.010763676}
+  m_LocalPosition: {x: -0.00011370045, y: 0, z: 0.010763676}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -504,7 +504,7 @@ MonoBehaviour:
   PositionAtRest: {x: -0.00011370045, y: 0.33033866, z: 0.010763676}
   PositionOffset: {x: 0, y: 0, z: 0}
   AffectsPositionX: 1
-  AffectsPositionY: 1
+  AffectsPositionY: 0
   AffectsPositionZ: 1
 --- !u!1 &7548637199184385881
 GameObject:
@@ -532,7 +532,7 @@ Transform:
   m_GameObject: {fileID: 7548637199184385881}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
