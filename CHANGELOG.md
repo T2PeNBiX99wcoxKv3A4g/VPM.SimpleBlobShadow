@@ -1,5 +1,20 @@
 # Changelog
 
+## [0.2.3](https://github.com/T2PeNBiX99wcoxKv3A4g/VPM.SimpleBlobShadow/compare/0.2.2..0.2.3) - 2026-06-14
+
+### ⚙️ Miscellaneous Tasks
+
+- Bump package version to 0.2.3 - ([008c558](https://github.com/T2PeNBiX99wcoxKv3A4g/VPM.SimpleBlobShadow/commit/008c5582fb73c1fde89c695b27a012b45965b2cc))
+- Add new prefabs and updates to support MAEX and LockColor variants - ([3fd2413](https://github.com/T2PeNBiX99wcoxKv3A4g/VPM.SimpleBlobShadow/commit/3fd2413c6d8de954a45bc58bf0b9ca0cd17b02f1))
+- Adjust animation curves and prefab positions for shadow scaling changes - ([c91d104](https://github.com/T2PeNBiX99wcoxKv3A4g/VPM.SimpleBlobShadow/commit/c91d1045e3cf67ce635d103e16862286fa76500c))
+- Add MIT license file - ([012f1f0](https://github.com/T2PeNBiX99wcoxKv3A4g/VPM.SimpleBlobShadow/commit/012f1f0367691d95f03386eea13d6187d88adb32))
+- Update checkout action to version 6 in build-listing workflow - ([caceeb6](https://github.com/T2PeNBiX99wcoxKv3A4g/VPM.SimpleBlobShadow/commit/caceeb648c7299d8c99eca19e2234f35741372c7))
+
+### Action
+
+- Update `CHANGELOG.md` - ([8702675](https://github.com/T2PeNBiX99wcoxKv3A4g/VPM.SimpleBlobShadow/commit/870267509fea086c67efe86a324bdf503bffafb1))
+
+
 ## [0.2.2](https://github.com/T2PeNBiX99wcoxKv3A4g/VPM.SimpleBlobShadow/compare/0.2.1..0.2.2) - 2026-06-13
 
 ### ⚙️ Miscellaneous Tasks
